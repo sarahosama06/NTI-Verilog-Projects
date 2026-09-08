@@ -5,7 +5,7 @@ Digital Design and Verilog HDL projects completed during the training program at
 * **Description:** Designed and simulated a 2-bit full adder logic circuit in Verilog using Gate-Level, Structural, and Behavioral modeling.
 
 * **Simulation Waveform:**
-  ![2-Bit Full Adder Waveform](./2bitsfulladder/waveform.png)
+  ![2-Bit Full Adder Waveform](2bit_full_adder/waveform.png)
 
 * **Simulation Transcript:**
 ```text
