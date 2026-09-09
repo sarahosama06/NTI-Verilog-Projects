@@ -22,7 +22,7 @@ Time=70 | a=11 b=11 cin=1 | GL: s=11 cout=1 | ST: s=11 cout=1 | BH: s=11 cout=1
 * **Description:** Implemented a parameterized 2-to-4 Decoder and 4-to-2 Encoder in Verilog using procedural for loops.
 
 * **Simulation Waveform:**
-  ![Decoder and Encoder Waveform](Decoder-Encoder/waveform.png)
+<img width="680" height="364" alt="waveform" src="https://github.com/user-attachments/assets/1e341ab6-1934-4116-8bde-a34156a874e2" />
 
 * **Simulation Transcript:**
 ```text
