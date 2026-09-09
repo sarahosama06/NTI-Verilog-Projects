@@ -65,7 +65,7 @@ Time = 160000 | Gray Input = 1111 | Seven-Segment Output = 0001000
 
 * **Simulation Waveform:**
   
-![Light Chaser Waveform](Light Chaser/waveform.png)
+  ![Light Chaser Waveform](Light Chaser/waveform.png)
 
 * **Simulation Transcript:**
 ```text
