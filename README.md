@@ -31,3 +31,32 @@ DEC: in=01 y=0010 | ENC: in=0010 y=01
 DEC: in=10 y=0100 | ENC: in=0100 y=10
 DEC: in=11 y=1000 | ENC: in=1000 y=11
 ```
+---
+
+## 3. Gray Code to 7-Segment Decoder
+* **Description:** Designed a hierarchical module that converts Gray Code input to Binary using a parametric generate loop, and drives a Common Anode 7-Segment display.
+
+* **Simulation Waveform:**
+  ![Gray to 7-Segment Waveform](Gray-To-7Segment/waveform.png)
+
+* **Simulation Transcript:**
+```text
+Time = 0 | Gray Input = 0000 | Seven-Segment Output = 0000001
+Time = 20000 | Gray Input = 0001 | Seven-Segment Output = 1001111
+Time = 30000 | Gray Input = 0010 | Seven-Segment Output = 0000110
+Time = 40000 | Gray Input = 0011 | Seven-Segment Output = 0010010
+Time = 50000 | Gray Input = 0100 | Seven-Segment Output = 0001111
+Time = 60000 | Gray Input = 0101 | Seven-Segment Output = 0100000
+Time = 70000 | Gray Input = 0110 | Seven-Segment Output = 1001100
+Time = 80000 | Gray Input = 0111 | Seven-Segment Output = 0100100
+Time = 90000 | Gray Input = 1000 | Seven-Segment Output = 0111000
+Time = 100000 | Gray Input = 1001 | Seven-Segment Output = 0110000
+Time = 110000 | Gray Input = 1010 | Seven-Segment Output = 0110001
+Time = 120000 | Gray Input = 1011 | Seven-Segment Output = 1000010
+Time = 130000 | Gray Input = 1100 | Seven-Segment Output = 0000000
+Time = 140000 | Gray Input = 1101 | Seven-Segment Output = 0000100
+Time = 150000 | Gray Input = 1110 | Seven-Segment Output = 1100000
+Time = 160000 | Gray Input = 1111 | Seven-Segment Output = 0001000
+```
+ييk
+ططططؤؤ
