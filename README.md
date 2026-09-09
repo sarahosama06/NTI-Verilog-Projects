@@ -58,3 +58,22 @@ Time = 140000 | Gray Input = 1101 | Seven-Segment Output = 0000100
 Time = 150000 | Gray Input = 1110 | Seven-Segment Output = 1100000
 Time = 160000 | Gray Input = 1111 | Seven-Segment Output = 0001000
 ```
+---
+
+## 4. Light Chaser
+* **Description:** Designed a sequential Light Chaser circuit using a parameterized Clock Divider to step down input frequencies and a Shift Register that rotates an active bit across LED outputs. For simulation purposes, clock parameters are scaled down in the Testbench (IN_FREQ = 10, OUT_FREQ = 1) to avoid lengthy execution times, while maintaining 50 MHz to 8 Hz scaling for physical FPGA hardware implementation.
+
+* **Simulation Waveform:**
+  ![Light Chaser Waveform](Light Chaser/waveform.png)
+
+* **Simulation Transcript:**
+```text
+Time = 0 | reset = 0 | counter = 0 | slow_clk = 0 | shift_out = 1000000000 | hold = 1
+Time = 25000 | reset = 1 | counter = 1 | slow_clk = 0 | shift_out = 1000000000 | hold = 1
+Time = 90000 | reset = 1 | counter = 4 | slow_clk = 0 | shift_out = 1000000000 | hold = 1
+Time = 110000 | reset = 1 | counter = 0 | slow_clk = 1 | shift_out = 0100000000 | hold = 1
+Time = 210000 | reset = 1 | counter = 0 | slow_clk = 0 | shift_out = 0100000000 | hold = 1
+Time = 310000 | reset = 1 | counter = 0 | slow_clk = 1 | shift_out = 0010000000 | hold = 1
+Time = 410000 | reset = 1 | counter = 0 | slow_clk = 0 | shift_out = 0010000000 | hold = 0
+Time = 510000 | reset = 1 | counter = 0 | slow_clk = 1 | shift_out = 0010000000 | hold = 0
+```
