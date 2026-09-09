@@ -58,5 +58,3 @@ Time = 140000 | Gray Input = 1101 | Seven-Segment Output = 0000100
 Time = 150000 | Gray Input = 1110 | Seven-Segment Output = 1100000
 Time = 160000 | Gray Input = 1111 | Seven-Segment Output = 0001000
 ```
-ييk
-ططططؤؤ
