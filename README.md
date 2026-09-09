@@ -76,3 +76,24 @@ Time = 310000 | reset = 1 | counter = 0 | slow_clk = 1 | shift_out = 0010000000 
 Time = 410000 | reset = 1 | counter = 0 | slow_clk = 0 | shift_out = 0010000000 | hold = 0
 Time = 510000 | reset = 1 | counter = 0 | slow_clk = 1 | shift_out = 0010000000 | hold = 0
 ```
+
+## 5. VeriRISC CPU Controller
+
+* **Description:** Implemented a combinational Controller module for the VeriRISC processor using Verilog `case` procedural statements. The unit decodes a 3-bit instruction opcode, 3-bit phase counter, and a zero flag input to generate 9 single-bit output control signals (`sel`, `rd`, `ld_ir`, `halt`, `inc_pc`, `ld_ac`, `wr`, `ld_pc`, `data_e`) for directing data bus operations, memory access, and program execution across all 8 execution phases.
+
+* **Simulation Waveform:**
+  ![Controller Waveform](controller/waveform.png)
+
+* **Simulation Transcript:**
+```text
+Testing opcode HLT phase 0 1 2 3 4 5 6 7
+Testing opcode SKZ phase 0 1 2 3 4 5 6 7
+Testing opcode ADD phase 0 1 2 3 4 5 6 7
+Testing opcode AND phase 0 1 2 3 4 5 6 7
+Testing opcode XOR phase 0 1 2 3 4 5 6 7
+Testing opcode LDA phase 0 1 2 3 4 5 6 7
+Testing opcode STO phase 0 1 2 3 4 5 6 7
+Testing opcode JMP phase 0 1 2 3 4 5 6 7
+TEST PASSED
+```
+
