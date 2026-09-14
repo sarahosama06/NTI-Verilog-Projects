@@ -97,3 +97,35 @@ Testing opcode JMP phase 0 1 2 3 4 5 6 7
 TEST PASSED
 ```
 
+## 6. Edge Detector (Moore vs. Mealy FSM)
+
+* **Description:** Designed and simulated both Moore and Mealy Finite State Machine (FSM) edge detectors to identify low-to-high (0 -> 1) transitions on an input signal (`level`) and generate a single-cycle pulse (`tick`). The Moore machine uses 3 states (`S0`, `S1`, `S2`) while the Mealy machine relies on 2 states (`S0`, `S1`).
+
+* **Simulation Waveform:**
+  ![Edge Detector Waveform](edge_detector/wave.png)
+
+* **Simulation Transcript:**
+```text
+Time=0 | clk=0 | level=0 | tick_moore=0 | tick_mealy=0
+Time=5000 | clk=1 | level=0 | tick_moore=0 | tick_mealy=0
+Time=10000 | clk=0 | level=0 | tick_moore=0 | tick_mealy=0
+Time=15000 | clk=1 | level=0 | tick_moore=0 | tick_mealy=0
+Time=20000 | clk=0 | level=1 | tick_moore=0 | tick_mealy=1
+Time=25000 | clk=1 | level=1 | tick_moore=1 | tick_mealy=0
+Time=30000 | clk=0 | level=1 | tick_moore=1 | tick_mealy=0
+Time=35000 | clk=1 | level=1 | tick_moore=0 | tick_mealy=0
+Time=40000 | clk=0 | level=1 | tick_moore=0 | tick_mealy=0
+Time=45000 | clk=1 | level=1 | tick_moore=0 | tick_mealy=0
+Time=50000 | clk=0 | level=0 | tick_moore=0 | tick_mealy=0
+Time=55000 | clk=1 | level=0 | tick_moore=0 | tick_mealy=0
+Time=60000 | clk=0 | level=0 | tick_moore=0 | tick_mealy=0
+Time=65000 | clk=1 | level=0 | tick_moore=0 | tick_mealy=0
+Time=70000 | clk=0 | level=1 | tick_moore=0 | tick_mealy=1
+Time=75000 | clk=1 | level=1 | tick_moore=1 | tick_mealy=0
+Time=80000 | clk=0 | level=1 | tick_moore=1 | tick_mealy=0
+Time=85000 | clk=1 | level=1 | tick_moore=0 | tick_mealy=0
+Time=90000 | clk=0 | level=0 | tick_moore=0 | tick_mealy=0
+Time=95000 | clk=1 | level=0 | tick_moore=0 | tick_mealy=0
+Time=100000 | clk=0 | level=0 | tick_moore=0 | tick_mealy=0
+Time=105000 | clk=1 | level=0 | tick_moore=0 | tick_mealy=0
+```
