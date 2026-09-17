@@ -155,3 +155,8 @@ Time=240 | Reset=1 | Input=1 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=1
 Time=250 | Reset=1 | Input=1 | NO_Moore=0 | O_Moore=1 | NO_Mealy=0 | O_Mealy=0
 Time=270 | Reset=1 | Input=1 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
 ```
+# Labs
+
+* **Lab 1: Register Module** (`labs/register.v`, `labs/reg_tb.v`)
+* **Lab 2: Counter Module** (`labs/counter.v`, `labs/counter_function.v`, `labs/counters_tb.v`)
+* **Lab 3: Single-Port Memory Module** (`labs/memory.v`, `labs/memory_tb.v`)
