@@ -129,3 +129,29 @@ Time=95000 | clk=1 | level=0 | tick_moore=0 | tick_mealy=0
 Time=100000 | clk=0 | level=0 | tick_moore=0 | tick_mealy=0
 Time=105000 | clk=1 | level=0 | tick_moore=0 | tick_mealy=0
 ```
+## 7. Sequence Detector (Overlapping vs. Non-Overlapping & Mealy vs. Moore FSM)
+
+* **Description:** Designed and simulated 4 variations of Finite State Machine (FSM) sequence detectors (Overlapping/Non-Overlapping Mealy and Moore) to identify the 6-bit target pattern (`110101`) on a serial data input stream (`tb_in`). The Mealy architectures generate an immediate, asynchronous detection flag upon receiving the final sequence bit (`140 ps`, `240 ps`), whereas the Moore architectures register the output synchronously on the following clock edge (`150 ps`, `250 ps`).
+
+* **Simulation Waveform:**
+  <img width="667" height="308" alt="wave" src="https://github.com/user-attachments/assets/c8d05216-ce8a-4f1e-9866-0a9c13a8634e" />
+
+
+* **Simulation Transcript:**
+```text
+Time=0 | Reset=0 | Input=0 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
+Time=20 | Reset=1 | Input=0 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
+Time=40 | Reset=1 | Input=1 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
+Time=80 | Reset=1 | Input=0 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
+Time=100 | Reset=1 | Input=1 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
+Time=120 | Reset=1 | Input=0 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
+Time=140 | Reset=1 | Input=1 | NO_Moore=0 | O_Moore=0 | NO_Mealy=1 | O_Mealy=1
+Time=150 | Reset=1 | Input=1 | NO_Moore=1 | O_Moore=1 | NO_Mealy=0 | O_Mealy=0
+Time=170 | Reset=1 | Input=1 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
+Time=180 | Reset=1 | Input=0 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
+Time=200 | Reset=1 | Input=1 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
+Time=220 | Reset=1 | Input=0 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
+Time=240 | Reset=1 | Input=1 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=1
+Time=250 | Reset=1 | Input=1 | NO_Moore=0 | O_Moore=1 | NO_Mealy=0 | O_Mealy=0
+Time=270 | Reset=1 | Input=1 | NO_Moore=0 | O_Moore=0 | NO_Mealy=0 | O_Mealy=0
+```
